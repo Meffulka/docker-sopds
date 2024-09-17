@@ -59,6 +59,7 @@ COPY scripts/start.sh /start.sh
 RUN apk add --no-cache -U bash libxml2 libxslt libffi libjpeg zlib postgresql expect \
     && chmod +x /start.sh
 
+
 WORKDIR /sopds
 
 VOLUME /var/lib/pgsql
